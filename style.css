@@ -1,0 +1,848 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.custom-navbar {
+  background: linear-gradient(to bottom, black, red);
+  display: flex;
+  min-height: 80px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+}
+
+.custom-navbar a {
+  font-size: 20px;
+  display: flex;
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.custom-navbar a:hover {
+  font-weight: bolder;
+}
+
+.nav-a a {
+  font-size: larger;
+  transition: all;
+  transition-duration: 0.2s;
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+  color: WHITE;
+}
+
+.login {
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+.menu {
+  margin-top: 6px;
+}
+
+.intro {
+  margin-top: 50px;
+}
+
+
+.intro a {
+  font-family: "Science Gothic", sans-serif;
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  color: #ffffff;
+  border: 1px solid #2a2a2a;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+/* Red glow line effect */
+.intro a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.intro a:hover {
+  border-color: #ff1a1a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Hover glow */
+.intro a:hover::before {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+/* Active / Selected button */
+.intro a.active {
+  background: linear-gradient(145deg, #ff1a1a, #b00000);
+  border-color: #ff1a1a;
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.8);
+}
+
+/* Click effect */
+.intro a:active {
+  transform: scale(0.95);
+}
+
+.hero-section {
+  background: linear-gradient(to bottom, red, maroon, black);
+  margin: 0;
+  overflow: hidden;
+}
+
+.intro h2 {
+  padding-top: 140px;
+}
+
+.hero2 {
+  background-color: black;
+  margin: 0;
+  color: red;
+  min-height: 78px;
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero2 p {
+  margin-top: 12px;
+  font-size: 34px;
+}
+
+/* FIXED: Changed background to black to match theme */
+#p-container {
+  background: #000000;
+  /* Changed from #8e0e1d (red) to black */
+  padding: 40px 20px;
+  /* Added padding for better spacing */
+  padding-bottom: 0;
+}
+
+
+/* ADDED: Column centering */
+#p-container .col {
+  display: flex;
+  justify-content: center;
+  /* Centers the card within column */
+  /* margin-bottom: 30px; */
+}
+
+.card {
+  font-family: "Science Gothic", sans-serif;
+  height: 480px;
+  border-radius: 12px;
+  border: none;
+  overflow: hidden;
+  background: #0f0f0f;
+  /* Dark background */
+  color: #f5f5f5;
+  /* Light text */
+  border: 1px solid #1e1e1e;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(255, 0, 0, 0.4);
+}
+
+/* Image Container - FIXED: Changed to dark background */
+.card-img-top {
+  background-color: #f5f5f5;
+  height: 220px;
+  /* Increased height for better visibility */
+  width: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+
+}
+
+
+
+/* Card Body */
+.card-body {
+  font-family: "Science Gothic", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: #0f0f0f;
+  /* Ensures dark background */
+}
+
+/* Card Title - FIXED: Changed to light color */
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  /* Light text instead of dark */
+  margin-bottom: 0.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+/* Small Text - Brand name */
+.card-body .small {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  color: #999;
+  /* Medium gray for secondary text */
+}
+
+/* Text Muted - FIXED: Better contrast */
+.text-muted {
+  color: #888 !important;
+}
+
+/* Price */
+.fw-bold.text-danger {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #dc3545 !important;
+  margin: 0.5rem 0;
+}
+
+/* Description Text - FIXED: Better visibility on dark background */
+.text-secondary {
+  font-size: 0.85rem;
+  color: #aaa !important;
+  /* Lighter gray for better readability */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.text-body-secondary {
+  color: #f5f5f5;
+}
+
+/* Rating */
+.card-body p:has(⭐) {
+  color: #f39c12;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.card .btn {
+  border-radius: 8px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.card .btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+/* Button Hover Effect */
+.card .btn-danger:hover {
+  background: #c82333;
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(220, 53, 69, 0.4);
+}
+
+/* Button Press Effect */
+.card .btn-danger:active {
+  transform: scale(0.98);
+}
+
+/* Additional fixes for Bootstrap classes used in cards */
+.card .small {
+  color: #999 !important;
+}
+
+.card strong {
+  color: #f5f5f5;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #dc3545;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  background: #000;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.view-products {
+  min-height: 500px;
+  background: linear-gradient(to bottom, black, maroon, red)
+}
+
+.view-products a {
+  font-family: "Science Gothic", sans-serif;
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  color: #ffffff;
+  border: 1px solid #2a2a2a;
+  padding: 10px 22px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.view-products a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.view-products a:hover {
+  border-color: #ff1a1a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Hover glow */
+.view-products a:hover::before {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+}
+
+/* Active / Selected button */
+.view-products a.active {
+  background: linear-gradient(145deg, #ff1a1a, #b00000);
+  border-color: #ff1a1a;
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.8);
+}
+
+/* Click effect */
+.view-products a:active {
+  transform: scale(0.95);
+}
+
+/* Review Section */
+.review {
+  background-color: #8B0000; 
+  padding: 3rem 0;
+}
+
+.review h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Comments Section */
+.comments-sec {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #8B0000 !important; 
+  padding: 2rem 0;
+}
+
+
+.comment {
+  background: none !important;
+}
+
+.card-review {
+  background-color: transparent !important; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.card-review:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+
+.card-img-top-review {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+
+.card-body-review {
+  padding: 1.5rem;
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  border-radius: 0; 
+}
+
+/* Card Title */
+.card-title-review {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3e50 !important;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Card Text */
+.card-text-review {
+  font-size: 0.95rem;
+  color: #555555 !important;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Card Footer - WHITE BACKGROUND */
+.card-review .card-footer {
+  background-color: #ffffff !important; 
+  border-top: 1px solid #e0e0e0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0 0 12px 12px;
+}
+
+.card-review .card-footer small,
+.card-review .card-footer .text-body-secondary {
+  color: #6c757d !important;
+  font-size: 0.85rem;
+}
+
+.card-review:hover{
+  cursor: pointer;
+}
+
+
+
+
+
+.words {
+  background-color: black;
+  color: white;
+}
+
+
+
+.FAQ-section {
+  background-color: #000000;
+}
+
+.accordion {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 18px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff1f1;
+  color: #b11226;
+}
+
+.contact-us {
+  background-color: #111;
+  padding-top: 200px;
+  color: white;
+  font-family: "Science Gothic", sans-serif;
+}
+
+.Contact {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.First-fashion {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.info-box {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  height: 100%;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.info-box p {
+
+
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 10;
+
+}
+
+.info-box:hover {
+  transform: translateY(-6px);
+  background: #222;
+}
+
+.site-footer {
+  background: linear-gradient(to bottom, black, darkred);
+  padding: 40px;
+  margin: 0;
+  width: 100%;
+}
+
+.site-footer i {
+  color: rgba(255, 0, 0, 0.83) !important;
+}
+
+.contact-item li span {
+  padding-left: 5px;
+}
+
+.site-footer p {
+  padding-right: 20px;
+}
+
+.explore a {
+  color: #ffffff !important;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.explore a:hover {
+  color: #e77d7dcd !important;
+  text-decoration: underline;
+}
+
+.signup-form input {
+  width: 250px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.signup-form button {
+  height: 40px;
+  padding: 10px;
+  background-color: #dc352d;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #c82333;
+}
+
+.footer-line {
+  border: none;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.right-column {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.right-column a i:hover {
+  color: #c82333 !important;
+}
+
+.left-column,
+.right-column {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+
+  .left-column,
+  .right-column {
+    flex: 1 1 48%;
+  }
+}
+
+.items-sold {
+  min-height: 300px;
+  background-color: black;
+  text-align: center;
+  padding: 95px;
+  /* border: solid navy; */
+  /* border-radius: 12px; */
+  border-width: 6px;
+  /* border-bottom: solid lightblue; */
+  border-bottom-width: 5px;
+  flex-wrap: wrap;
+}
+
+.pcards {
+  min-height: 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-width: 6px;
+  border-top: none;
+}
+
+.pcard {
+  width: 270px;
+  min-height: 160px;
+  background: #1a1a1a;
+  text-align: center;
+  border: solid black;
+  border-radius: 24px;
+  transition: all;
+  transition-duration: 0.3s;
+  flex-wrap: wrap;
+  padding: 4px;
+
+
+
+}
+
+.pcard:hover {
+  transform: translateY(-6px);
+}
+
+.view-products {
+  background-color: red;
+
+}
+
+.amount {
+  font-size: 24px;
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+  color: red;
+  font-weight: bolder;
+
+}
+
+.items-sold H2 {
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+  font-size: 38px;
+  color: #ccc;
+}
+
+.quantity {
+  font-size: 18px;
+  color: #fff1f1;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+  /* border: 5px solid black;
+  border-radius: 12px; */
+}
+
+.explanation {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: #fff;
+
+}
+
+.review {
+  height: 100px;
+  font-size: 22px;
+  background-color: darkred;
+}
+
+.comments-sec {
+  background-color: darkred;
+  min-height: 350px;
+}
+
+.card-review {
+  font-family: "Lora", serif;
+  color: #000000;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  transition: all 0.5s;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title-review {
+  padding: 5px;
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+}
+
+.card-img-top-review {
+  height: 300px;
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+}
+
+.card-body-review {
+  padding: 1rem;
+  flex: 1;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.card-text-review {
+  flex-grow: 1;
+  padding: 5px;
+  line-height: 1.6;
+}
+
+.card-footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+  padding: 0.75rem 1rem;
+}
+
+.comment {
+  transition: all 0.5s;
+  margin-bottom: 12px;
+}
+
+.comment:hover {
+  transform: translateY(-5px);
+}
+
+.review h2 {
+  font-size: 44px;
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+  color: #fff;
+}
+
+.comments-sec.container {
+  background-color: darkred;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}

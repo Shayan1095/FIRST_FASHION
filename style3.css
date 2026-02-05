@@ -1,0 +1,126 @@
+/* .wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background:radial-gradient(ellipse at center ,  darkred , black) ;
+}
+.container{
+    border: 3px solid rgb(53, 52, 52);
+    border-radius: 12px;
+} */
+/* WRAPPER - FULL SCREEN, CENTERED */
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, darkred 0%, black 100%);
+    font-family: "Poppins", sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 90%;
+    /* border: 1px solid #333; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.left-hero {
+    background: linear-gradient(120deg, #000000, #120000, #1a0000, #000000);
+}
+
+/* LEFT HERO */
+.left-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Science Gothic", sans-serif;
+}
+
+.left-hero p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 10;
+}
+
+/* FORM */
+.form-label {
+    font-weight: 600;
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 10;
+}
+
+.form-control {
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 10px 14px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ff1a1a;
+    box-shadow: 0 0 8px rgba(255, 26, 26, 0.5);
+    outline: none;
+}
+
+/* SIGN UP BUTTON */
+.btn-danger {
+    background: linear-gradient(145deg, #ff1a1a, #b00000);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 26, 26, 0.6);
+}
+
+/* LINKS */
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #b00000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .left-hero,
+    .col-md-6 {
+        padding: 40px 30px !important;
+        text-align: center;
+    }
+
+    .left-hero h1 {
+        font-size: 2rem;
+    }
+}
+
+.info-right {
+    background: radial-gradient(circle at top left, #660000 0%, #110000 100%);
+    color: #fff;
+}
+
+.info-right h2 {
+    font-family: "Science Gothic", sans-serif;
+}

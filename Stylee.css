@@ -1,0 +1,171 @@
+.custom-navbar {
+  background: linear-gradient(to bottom, black, red);
+  display: flex;
+  min-height: 80px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+
+
+}
+
+
+
+.custom-navbar a {
+  font-size: 20px;
+  display: flex;
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.custom-navbar a:hover {
+  font-weight: bolder;
+
+}
+
+.nav-a a {
+  font-size: larger;
+
+  transition: all;
+  transition-duration: 0.2s;
+  text-align: center;
+}
+
+.about-us {
+  background: #111;
+  padding-top: 200px;
+  color: #ddd;
+   font-family: "Science Gothic", sans-serif;
+}
+
+.section-title {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.section-title span {
+  color: #e50914;
+}
+
+.about-logo {
+  max-width: 260px;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.6));
+}
+
+.info-box {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-6px);
+  background: #222;
+}
+
+.info-box h4,
+.info-box h5 {
+  color: #fff;
+}
+
+.site-footer {
+  background: linear-gradient(to bottom, black, darkred);
+  padding: 40px;
+  margin: 0;
+  width: 100%;
+  
+}
+
+.site-footer i {
+  color: rgba(255, 0, 0, 0.83) !important;
+}
+
+.contact-item li span {
+  padding-left: 5px;
+}
+
+.site-footer p {
+  padding-right: 20px;
+}
+
+.explore a {
+  color: #ffffff !important;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.explore a:hover {
+  color: #e77d7dcd !important;
+  text-decoration: underline;
+}
+
+.signup-form input {
+  width: 250px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.signup-form button {
+  height: 40px;
+  padding: 10px;
+  background-color: #dc352d;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #c82333;
+}
+
+.footer-line {
+  border: none;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.right-column {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.right-column a i:hover {
+  color: #c82333 !important;
+}
+
+.left-column,
+.right-column {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+
+  .left-column,
+  .right-column {
+    flex: 1 1 48%;
+  }
+}
